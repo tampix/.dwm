@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd $(git rev-parse --show-toplevel)
+cd ~/.dwm.new
 updpkgsums
-makepkg -efi --noconfirm
+makepkg -fi --noconfirm --clean
 killall dwm
