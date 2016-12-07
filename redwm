@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd $(git rev-parse --show-toplevel)
+updpkgsums
+makepkg -efi --noconfirm
+killall dwm
